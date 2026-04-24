@@ -1,5 +1,12 @@
+import Model.Cliente;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Cliente cliente = new Cliente("Milena", "35 99999999");
+
+
+
+
+        System.out.println(cliente);
     }
 }

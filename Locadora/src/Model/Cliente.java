@@ -4,7 +4,8 @@ public class Cliente {
 
     private String Nome;
     private String Telefone;
-    private String Contato;
+
+
 
     public Cliente(String nome, String telefone) {
         Nome = nome;
@@ -29,9 +30,10 @@ public class Cliente {
     }
 
     public String getContato() {
-        return Contato;
+        return " ";
     }
-     public void apresentar(){
-        
+
+     public void apresentar() {
+
      }
 }
