@@ -4,10 +4,12 @@ public class Cliente {
 
     private String Nome;
     private String Telefone;
+    private String Contato;
 
     public Cliente(String nome, String telefone) {
         Nome = nome;
         Telefone = telefone;
+
     }
 
     public String getNome() {
@@ -25,4 +27,11 @@ public class Cliente {
     public void setTelefone(String telefone) {
         Telefone = telefone;
     }
+
+    public String getContato() {
+        return Contato;
+    }
+     public void apresentar(){
+        
+     }
 }
