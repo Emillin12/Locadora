@@ -4,13 +4,19 @@ public class Filme {
 
     private String titulo;
     private String genero;
-    private double ValorAluguel;
+    private Double ValorAluguel;
 
-    public Filme(String titulo, String genero, double valorAluguel) {
+    public Filme(String titulo, String genero, double ValorAluguel) {
         this.titulo = titulo;
         this.genero = genero;
+        this.ValorAluguel = ValorAluguel;
+
+    }
+
+    public Filme(Double valorAluguel) {
         ValorAluguel = valorAluguel;
     }
+
 
     public double getValorAluguel() {
         return ValorAluguel;
@@ -34,5 +40,13 @@ public class Filme {
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    public void detalhes(){
+        System.out.println(getTitulo() + " " + getGenero());
+    }
+    public void Desconto(){
+        double desc = ValorAluguel - 10;
+        System.out.println("O desconto é de: " + desc);
     }
 }
